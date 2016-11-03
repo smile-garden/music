@@ -1,0 +1,53 @@
+@mixin center{
+  position: absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin: auto;
+}
+@mixin zuoyou{
+  position: absolute;
+  left:0;
+  right:0;
+  margin: auto;
+}
+@mixin shangxia{
+  position: absolute;;
+  top:0;
+  bottom:0;
+  margin: auto;
+}
+@mixin cube($size){
+  width:$size;
+  height:$size;
+}
+@mixin circus($size){
+  @include cube($size);
+  -webkit-border-radius:50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+
+}
+@mixin box{
+  //border-radius: 10px;
+  box-shadow: 0 0 5px 5px orange;
+}
+$m-size:1070px;
+@mixin onm{
+  @media screen and (max-width:$m-size){
+    @content;
+  }
+}
+$s-size:736px;
+@mixin ons{
+  @media screen and (max-width:$s-size){
+    @content;
+  }
+}
+$lm-size:768px;
+@mixin onlm{
+  @media screen and (max-width:$lm-size){
+    @content;
+  }
+}

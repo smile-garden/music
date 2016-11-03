@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.musicbox {
+  width: 900px;
+  height: 540px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 6px;
+  background: linear-gradient(#444, #000);
+}
+
+.music {
+  width: 800px;
+  height: 460px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 6px;
+}
+
+.musicn {
+  width: 250px;
+  height: 410px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/musicn.jpg) right bottom;
+}
+
+.musicn .mtitle {
+  width: 100%;
+  height: 50px;
+  background: #4d0a39;
+  line-height: 50px;
+  text-align: center;
+  color: #eee;
+}
+
+.musicn .musicinfo {
+  width: 100%;
+  height: 60px;
+}
+
+.musicn .musicinfo li {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #4d0a39;
+  font-size: 12px;
+}
+
+.musicn .musictu {
+  width: 100%;
+  height: 220px;
+  position: relative;
+}
+
+.musicn .musictu .yuantu {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.musicn .musictu .yuantu.dong {
+  animation: a 1000s forwards;
+}
+
+.musicn .contor {
+  width: 100%;
+  height: 80px;
+}
+
+.musicn .contor .qiehuan {
+  width: 200px;
+  height: 44px;
+  margin: 18px 25px;
+  border-radius: 20px;
+}
+
+.musicn .contor .qiehuan div {
+  width: 40px;
+  height: 40px;
+  margin: 2px 13px;
+  float: left;
+  cursor: pointer;
+}
+
+.musicn .contor .qiehuan .prevmusic {
+  background: url(../img/left.png);
+}
+
+.musicn .contor .qiehuan .bofang-zhangting {
+  background: url(../img/ting.png);
+}
+
+.musicn .contor .qiehuan .bofang-zhangting.ting {
+  background: url(../img/bofang.png);
+}
+
+.musicn .contor .qiehuan .nextmusic {
+  background: url(../img/right.png);
+}
+
+@keyframes a {
+  form {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(36000deg);
+  }
+}
+
+.musiclist {
+  width: 550px;
+  height: 410px;
+  position: absolute;
+  top: 0;
+  left: 250px;
+}
+
+.musiclist .gecibox {
+  width: 100%;
+  height: 100%;
+}
+
+.musiclist .gecibox .geci {
+  width: 100%;
+  height: 350px;
+  padding: 40px;
+  text-align: center;
+  line-height: 40px 40px 10px;
+  color: #4d0a39;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.musiclist .gecibox .geci li {
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  color: #4d0a39;
+  position: relative;
+  top: 10%;
+}
+
+.musiclist .gecibox .time-info {
+  width: 100%;
+  height: 60px;
+  padding: 20px 50px;
+  box-sizing: border-box;
+}
+
+.musiclist .gecibox .time-info span {
+  color: #fff;
+  float: left;
+  display: block;
+  line-height: 20px;
+}
+
+.musiclist .gecibox .time-info .sjzhishi {
+  margin: 7px 20px;
+  height: 6px;
+  width: 330px;
+  border-radius: 3px;
+  background: #312f30;
+  position: relative;
+  cursor: pointer;
+}
+
+.musiclist .gecibox .time-info .sjzhishi .colorzs {
+  height: 6px;
+  width: 0;
+  border-radius: 3px;
+  background: #f4c600;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.musiclist .gecibox .time-info .sjzhishi .yuan {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -2px;
+  left: -5px;
+  border-radius: 50%;
+  background: #f4c600;
+}
+
+.musiclist .play-list {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.musiclist .play-list li {
+  width: 100%;
+  height: 36px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 36px;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+}
+
+.musiclist .play-list li:hover {
+  color: #f4c600;
+}
+
+.musiclist .play-list li.geming {
+  color: #f4c600;
+}
+
+.musiclist .play-list li .gm {
+  float: left;
+}
+
+.musiclist .play-list li .gs {
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.musiclist .play-list li .sc {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 0;
+  right: 56px;
+  background: url(../img/sc.png) no-repeat center center;
+  background-size: 18px 18px;
+  opacity: 0.3;
+  z-index: 1000;
+}
+
+.musiclist .play-list li .sc:hover {
+  opacity: 1;
+}
+
+.musiclist .play-list li .totall {
+  float: right;
+  width: 36px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.tools {
+  width: 800px;
+  height: 50px;
+  position: absolute;
+  top: 410px;
+  left: 0;
+  background: #4d0a39;
+}
+
+.tools div {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: 5px 45px;
+  cursor: pointer;
+}
+
+.tools .net {
+  width: 140px;
+  float: left;
+  margin-left: 20px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.tools .gedan {
+  background: url(../img/menu.png) center center/20px 20px no-repeat;
+}
+
+.tools .random {
+  background: url(../img/suiji.png) center center/24px 24px no-repeat;
+}
+
+.tools .random.ran {
+  background: url(../img/random.png) center center/24px 24px no-repeat;
+}
+
+.tools .single {
+  background: url(../img/round.png) center center/24px 24px no-repeat;
+}
+
+.tools .single.round {
+  background: url(../img/dan.png) center center/24px 24px no-repeat;
+}
+
+.tools .yinliang {
+  width: 140px;
+  margin-right: 20px;
+  float: left;
+}
+
+.tools .yinliang .yllb {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin: 0;
+  background: url(../img/yinliang.png) center center/24px 24px no-repeat;
+}
+
+.tools .yinliang .yllb.jingyin {
+  background: url(../img/jingyin.png) center center/24px 24px no-repeat;
+}
+
+.tools .yinliang .ylzhishi {
+  margin: 17px 0;
+  height: 6px;
+  width: 100px;
+  float: left;
+  border-radius: 3px;
+  background: #312f30;
+  position: relative;
+}
+
+.tools .yinliang .ylzhishi .colorzs {
+  height: 6px;
+  width: 100px;
+  border-radius: 3px;
+  background: #f4c600;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+.tools .yinliang .ylzhishi .yuan {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  position: absolute;
+  top: -2px;
+  left: 95px;
+  border-radius: 50%;
+  background: #f4c600;
+}
